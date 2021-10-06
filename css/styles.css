@@ -1,0 +1,25 @@
+.head {
+  color: black;
+  font-size: 150px;
+  text-align: center;
+}
+.paragraph {
+  color: Red;
+  text-align: center;
+  font-size: 100px;
+}
+.p1 {
+  color: darkred;
+  text-align: center;
+  font-size: 75px;
+}
+.p2 {
+  color: gold;
+  text-align: center;
+  font-size: 50px;
+}
+.p3 {
+  color: lightcoral;
+  text-align: center;
+  font-size: 25px;
+}
