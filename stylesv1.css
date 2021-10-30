@@ -1,0 +1,258 @@
+/* General rules*/
+
+p {
+  font-family: nimbus sans;
+}
+h1,
+h2,
+h3 {
+  font-family: nimbus sans;
+}
+a {
+  font-family: nimbus sans;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.button {
+  width: 238px;
+  background-color: #ab533f;
+  border-radius: 35px;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+body {
+  margin: 0;
+}
+
+/* Main content*/
+header {
+  background-color: #849a9f;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  display: inline-block;
+  flex: 1;
+  padding: 0;
+}
+.logo img {
+  width: 200px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  margin-left: 0;
+  padding-left: 0;
+}
+nav > * {
+  flex: 1;
+}
+.nav-pages {
+  display: inline-block;
+  font-size: 2em;
+  margin-right: 50px;
+  align-self: center;
+}
+nav ul {
+  padding: 0;
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.nav-list a:hover {
+  color: white;
+}
+.nav-list {
+  flex: 4;
+}
+.nav-icon {
+  margin-left: 40px;
+  width: 30px;
+  justify-items: right;
+  float: right;
+  color: black;
+}
+.hero-img {
+  background-image: url(images/home-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 88vh;
+  padding-top: 150px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+.hero-img h1 {
+  color: white;
+  max-width: 500px;
+  margin: 100px auto 0 auto;
+}
+.intro {
+  z-index: 2;
+  background-color: white;
+  margin-top: -160px;
+  padding: 50px;
+}
+.bg-overlay {
+  background-color: black;
+  z-index: 1;
+}
+.intro h2 {
+  display: block;
+  margin: 30px auto;
+  width: 382px;
+}
+.intro p {
+  max-width: 771px;
+  display: block;
+  margin: 10px auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.about-button {
+  background-color: #0a3540;
+}
+.showcase h2 {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "product1 product2 product3"
+    "product4 product5 product6";
+  padding-bottom: 100px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.product {
+  font-size: 1em;
+  padding: 10px;
+}
+.product1 {
+  grid-area: product1;
+}
+.product2 {
+  grid-area: product2;
+}
+.product3 {
+  grid-area: product3;
+}
+.product4 {
+  grid-area: product4;
+}
+.product5 {
+  grid-area: product5;
+}
+.product6 {
+  grid-area: product6;
+}
+.product img {
+  width: 333px;
+  max-height: 400px;
+  object-fit: cover;
+}
+.product h3 {
+  margin: 10px 0;
+  padding: 0;
+}
+.product p {
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  float: right;
+  position: relative;
+  top: -450px;
+  right: 15px;
+  color: red;
+}
+.product:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
+    10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.footer-section-one {
+  background-color: #0a3641;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  gap: 500px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+footer li {
+  padding: 10px;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: white;
+  justify-content: center;
+  align-self: center;
+}
+.footer-section-two {
+  background-color: #23778c;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  padding: 50px;
+}
+.social img {
+  display: flex;
+  width: 70px;
+  margin: auto;
+}
+footer img {
+  max-width: 100px;
+}
+.line-div {
+  width: 0px;
+  border: 1px #707070 solid;
+  min-height: 90px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .nav-icon {
+    display: none;
+  }
+  .p5 {
+    display: none;
+  }
+  .p6 {
+    display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "product1 product2"
+      "product3 product4";
+    padding-bottom: 100px;
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+  .product:hover {
+    box-shadow: none;
+  }
+  .product img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+}

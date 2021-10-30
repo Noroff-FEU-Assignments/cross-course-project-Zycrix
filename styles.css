@@ -1,0 +1,276 @@
+/*mobile*/
+/*general rules*/
+.material-icons {
+  font-size: 1.5em;
+  padding-bottom: 0;
+  padding-top: 10px;
+  color: black;
+}
+/*.button {
+  border-radius: 35px;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background-color: #ab533f;
+}*/
+.button-container {
+  background-color: #ab533f;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  min-width: 10rem;
+  text-align: center;
+  border-radius: 3rem;
+  color: white;
+  margin-top: 1rem;
+}
+.button-container a {
+  color: white;
+}
+.button a {
+  color: white;
+}
+p,
+pre {
+  font-family: nimbus sans;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3 {
+  font-family: nimbus sans;
+}
+a {
+  font-family: nimbus sans;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*Header style*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background: white;
+}
+header {
+  background-color: #849a9f;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+/*All about the logo*/
+.logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.logo-div {
+  order: 2;
+  width: 33.3%;
+  text-align: center;
+}
+.logo-div img {
+  max-width: 100px;
+}
+/*Nav menu*/
+.nav-list li {
+  list-style: none;
+}
+
+/*Checkbox hack*/
+.nav-list {
+  display: none;
+  padding-top: 2rem;
+  padding-left: 0;
+}
+#burger-menu:checked ~ .nav-list {
+  display: block;
+}
+#burger-menu {
+  display: none;
+}
+.burger-menu {
+  padding-left: 0.5rem;
+}
+.menu {
+  width: 33.3%;
+}
+.nav-pages {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+.nav-pages ul {
+  padding-top: 5rem;
+}
+.nav-pages a {
+  color: black;
+}
+
+/*nav icons*/
+.nav-icons {
+  order: 3;
+  width: 33.3%;
+  text-align: right;
+}
+.nav-icons > * {
+  padding-right: 0.5rem;
+}
+/*End of nav*/
+
+/*hero img start*/
+.hero-img {
+  background-image: url(images/home-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  min-height: 50vh;
+  max-height: 100vh;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+.hero-img h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  padding-top: 7rem;
+  color: white;
+}
+.hero-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/*hero end, intro start*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.intro pre {
+  margin: 0 1.5rem 0.8rem;
+}
+.about-button {
+  background-color: #0a3540;
+}
+/*intro end showcase start*/
+
+.showcase h2 {
+  margin-top: 3em;
+}
+.showcase {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "product1 product2"
+    "product3 product4";
+  grid-gap: 0.5rem;
+  margin: 1.5rem;
+}
+.product {
+  font-size: 1em;
+  width: 100%;
+  text-align: left;
+}
+.product1 {
+  grid-area: product1;
+}
+.product2 {
+  grid-area: product2;
+}
+.product3 {
+  grid-area: product3;
+}
+.product4 {
+  grid-area: product4;
+}
+.p5 {
+  display: none;
+}
+.p6 {
+  display: none;
+}
+.product h3 {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+}
+.product p {
+  margin: 0;
+  padding: 0;
+}
+.overlay-container {
+  position: relative;
+  width: 100%;
+}
+.overlay-container img {
+  width: 100%;
+}
+.icon {
+  position: absolute;
+  right: 0.5rem;
+  z-index: 99;
+  color: red;
+}
+/*footer */
+
+.footer-section-one {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+  background-color: #0a3641;
+  margin: 0;
+  text-align: left;
+  padding: 1rem;
+}
+.footer-section-one a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.footer-section-one ul {
+  padding: 0;
+}
+.footer-section-one li {
+  list-style: none;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.footer-section-one p {
+  color: white;
+  font-size: 0.7em;
+}
+.line-div {
+  width: 0px;
+  border: 0.03rem #707070 solid;
+  min-height: 1rem;
+  justify-content: center;
+  background-color: #707070;
+  padding: 0;
+  margin: 0;
+}
+.social img {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  margin: auto;
+}
+.container-adress {
+  margin: auto 0;
+}
+.footer-section-two {
+  background-color: rgba(35, 119, 140, 61%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
