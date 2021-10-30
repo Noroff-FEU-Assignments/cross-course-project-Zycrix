@@ -118,6 +118,7 @@ nav ul {
   max-width: 771px;
   display: block;
   margin: 10px auto;
+  padding: 0.5rem;
 }
 .button-container {
   display: flex;
