@@ -1,12 +1,16 @@
 /* General rules*/
-
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
 p {
-  font-family: nimbus sans;
+  font-family: nimbus-sans, open-sans;
 }
 h1,
 h2,
 h3 {
-  font-family: nimbus sans;
+  font-family: nimbus-sans, open-sans;
 }
 a {
   font-family: nimbus sans;
@@ -92,7 +96,8 @@ nav ul {
 .hero-img h1 {
   color: white;
   max-width: 500px;
-  margin: 100px auto 0 auto;
+  margin: auto;
+  padding: 0;
 }
 .intro {
   z-index: 2;
