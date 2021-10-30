@@ -1,14 +1,14 @@
 h1 {
   display: flex;
   justify-content: center;
-  margin: 300px 600px auto 600px;
+
   border: 10px black dashed;
   padding: 30px;
 }
 a {
   display: flex;
   justify-content: center;
-  margin: 300px 600px;
+
   text-decoration: none;
   color: white;
   background-color: green;

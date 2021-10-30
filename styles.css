@@ -71,20 +71,20 @@ nav {
   text-align: center;
 }
 .logo-div img {
-  max-width: 100px;
+  width: 100%;
 }
 /*Nav menu*/
 .nav-list li {
   list-style: none;
 }
-.cart {
+#cart {
   display: none;
 }
 /*Checkbox hack*/
 .nav-list {
-  display: none;
   padding-top: 2rem;
   padding-left: 0;
+  display: none;
 }
 #burger-menu:checked ~ .nav-list {
   display: block;
@@ -283,10 +283,212 @@ nav {
   .hero-img {
     background-position-x: left;
   }
-  .cart {
+  #cart {
     display: block;
   }
   .social img {
     width: 2rem;
+  }
+}
+@media (min-width: 700px) {
+  .burger-menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav > * {
+    flex: 1;
+    padding: 10px;
+  }
+  .logo-div img {
+    width: 300px;
+  }
+  .logo {
+    display: inline-block;
+    flex: 1;
+    padding: 0;
+  }
+  .logo-div {
+    order: 1;
+    text-align: left;
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  .menu {
+    order: 2;
+    flex-grow: 3;
+    text-align: center;
+  }
+  .nav-bar {
+    padding: 10px;
+  }
+  .nav-pages {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 50px;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+  }
+  .nav-list li {
+    margin: 0 40px;
+  }
+  .nav-list a:hover {
+    color: white;
+  }
+  .nav-list {
+    flex: 6;
+    padding-top: 0;
+    display: block;
+    padding: 1rem;
+  }
+  .nav-icons {
+    justify-items: right;
+    float: right;
+    color: black;
+    flex-grow: 1;
+  }
+  .nav-icon {
+    padding: 10px;
+  }
+  .material-icons {
+    font-size: 2rem;
+  }
+  .hero-img {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 68vh;
+    padding-top: 150px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+  }
+  .hero-img h1 {
+    padding: 0;
+    font-size: 2rem;
+    max-width: 700px;
+    padding: 0;
+    margin: 10rem auto 0;
+  }
+
+  .button-container {
+    width: 300px;
+    background-color: #ab533f;
+    border-radius: 35px;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .intro h2 {
+    font-size: 1.9rem;
+  }
+  .intro p {
+    max-width: 1000px;
+    display: block;
+    margin: 0.1rem auto;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about-button {
+    background-color: #0a3540;
+    margin: 2rem auto 0;
+  }
+
+  .grid-container {
+    display: grid;
+
+    grid-template-areas:
+      "product1 product2 product3"
+      "product4 product5 product6";
+    padding-bottom: 100px;
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+  .product {
+    font-size: 1em;
+    margin: 10px;
+    padding: 5px;
+    max-width: 100%;
+  }
+  .product1 {
+    grid-area: product1;
+  }
+  .product2 {
+    grid-area: product2;
+  }
+  .product3 {
+    grid-area: product3;
+  }
+  .product4 {
+    grid-area: product4;
+  }
+  .product5 {
+    grid-area: product5;
+  }
+  .product6 {
+    grid-area: product6;
+  }
+  .p5 {
+    display: block;
+  }
+  .p6 {
+    display: block;
+  }
+  .product img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  .product h3 {
+    margin: 10px 0;
+    padding: 0;
+  }
+  .product p {
+    margin: 0;
+    padding: 0;
+  }
+  .product:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
+      10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+  }
+  .footer-section-one {
+    justify-content: space-between;
+  }
+  .footer-section-one ul {
+    margin: 3rem 15rem 3rem 5rem;
+  }
+  .container-adress {
+    text-align: left;
+    margin-right: 20rem;
+    font-size: 1.5rem;
+  }
+  .button-container:hover {
+    background-color: white;
+    border: 0.5rem #ab533f solid;
+    padding: 1rem 1.5rem;
+  }
+  .about-button:hover {
+    background-color: white;
+    color: black;
+    border: 0.5rem #0a3540 solid;
+    padding: 1rem 1.5rem;
+  }
+  .button-container:hover a {
+    color: black;
   }
 }
