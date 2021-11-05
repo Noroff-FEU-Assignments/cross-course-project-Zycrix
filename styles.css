@@ -6,8 +6,7 @@
   padding-top: 10px;
   color: black;
 }
-.button-container {
-  background-color: #ab533f;
+.button {
   margin: 0 auto;
   padding: 1rem 1.5rem;
   min-width: 10rem;
@@ -19,9 +18,7 @@
 .button-container a {
   color: white;
 }
-.button a {
-  color: white;
-}
+
 p {
   font-family: nimbus-sans;
   font-size: 1rem;
@@ -29,10 +26,10 @@ p {
 h1,
 h2,
 h3 {
-  font-family: nimbus sans;
+  font-family: nimbus-sans;
 }
 a {
-  font-family: nimbus sans;
+  font-family: nimbus-sans;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -102,7 +99,9 @@ nav {
 .nav-pages a {
   color: black;
 }
-
+.active a{
+  color: white;
+}
 /*nav icons*/
 .nav-icons {
   order: 3;
@@ -356,7 +355,7 @@ nav {
   }
   .nav-list a {
     text-decoration: none;
-    color: black;
+    
     font-size: 2rem;
   }
   .nav-list li {
@@ -401,15 +400,17 @@ nav {
     margin: 10rem auto 0;
   }
 
-  .button-container {
+  .button {
     width: 300px;
-    background-color: #ab533f;
     border-radius: 35px;
     text-align: center;
     padding: 1.5rem 2rem;
     font-size: 1.5rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
+  }
+  .main-cta{
+    background-color: #ab533f;
   }
   .intro h2 {
     font-size: 1.9rem;
@@ -498,18 +499,16 @@ nav {
     margin-right: 20rem;
     font-size: 1.5rem;
   }
-  .button-container:hover {
+  .button:hover {
     background-color: white;
     border: 0.5rem #ab533f solid;
     padding: 1rem 1.5rem;
+    color:black;
   }
   .about-button:hover {
-    background-color: white;
-    color: black;
     border: 0.5rem #0a3540 solid;
-    padding: 1rem 1.5rem;
   }
-  .button-container:hover a {
+  /*.button-container:hover a {
     color: black;
-  }
+  }*/
 }
