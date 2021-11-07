@@ -1,0 +1,43 @@
+.product-img{
+    max-height: 30vh;
+}
+.drop-down-size{
+    position:relative;
+}
+.drop-down-size p{
+    margin:0;
+}
+.drop{
+    display:none;
+}
+input{
+    display:none;
+}
+#size:checked ~ .drop{
+    display:block;
+}
+#xsmall:checked ~ .drop{
+    display:none;
+}
+#xsmall:checked ~ .xs{
+    display:block;
+    position:absolute;
+    top:-2px;
+    background-color:white;
+    z-index:99;
+    padding-right:10px;
+}
+#xlarge:checked ~ .drop{
+    display:none;
+}
+#small:checked ~ .size{
+    display:none;
+}
+#xlarge:checked ~ .xl{
+    display:block;
+    position:absolute;
+    top:-2px;
+    background-color:white;
+    z-index:99;
+    padding-right:10px;
+}

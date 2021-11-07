@@ -2,6 +2,7 @@
 /*general rules*/
 :root{
   --main-color: #849A9F;
+  --secound-color:#0a3540;
 }
 .material-icons {
   font-size: 1.5em;
