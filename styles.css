@@ -1,5 +1,8 @@
 /*mobile*/
 /*general rules*/
+:root{
+  --main-color: #849A9F;
+}
 .material-icons {
   font-size: 1.5em;
   padding-bottom: 0;

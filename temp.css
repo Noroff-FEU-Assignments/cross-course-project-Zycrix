@@ -22,3 +22,6 @@ a:hover {
   color: black;
   background-color: white;
 }
+header{
+  display:none;
+}
