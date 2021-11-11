@@ -66,3 +66,37 @@ input[type="submit"]{
 .contact-info:nth-child(4){
     margin-bottom: 5rem;
 }
+@media (min-width:700px){
+    form{
+        width:40%;
+        margin:0 auto;
+        gap:1rem;
+        display:grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .header-img{
+        min-height:50vh;
+        background-position: 50% 60%;
+    }
+    label{
+        padding-top:1rem;
+    }
+    .thanks{
+        width:40%;
+        margin: 3rem auto;
+        font-size:1.5rem;
+        text-align: center;
+    }
+    .contact-info{
+        width:30%;
+        margin:10rem auto;
+    }
+    .contact-info p{
+        font-size:1.5rem;
+    }
+    .button{
+        width:100%;
+        margin:0 auto;
+    }
+}

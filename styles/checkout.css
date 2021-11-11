@@ -1,0 +1,49 @@
+main{
+    font-family: nimbus-sans;
+}
+H1, h2{
+    text-align:center;
+    text-transform: capitalize;
+}
+P{
+    text-transform: capitalize;
+}
+.form_container{
+    display:flex;
+    flex-direction: column;
+}
+.form{
+    max-width:80%;
+    margin:0 auto;
+    text-transform: capitalize;
+}
+label{
+    margin:0.5rem 0;
+}
+select{
+    margin:1rem 0;
+}
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:0 auto;
+}
+.line{
+    width:85%;
+    background-color: black;
+    height:0.05rem;
+    margin:0 auto;
+}
+.main-cta{
+    all:unset;
+    width:80%;
+    display:block;
+    background-color: var(--secound-color);
+    margin:2rem auto;
+    padding: 1rem 0;
+    text-align: center;
+    color:white;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}

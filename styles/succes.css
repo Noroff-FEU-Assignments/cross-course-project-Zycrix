@@ -1,0 +1,17 @@
+h1, h2, h3{
+    text-align:center;
+    text-transform: capitalize;
+}
+h2{
+    margin:3rem;
+}
+main{
+    width:90%;
+    margin:0 auto;
+}
+.grid-container{
+    margin:0 auto 3rem;
+}
+.product h3{
+    text-align: left;
+}
