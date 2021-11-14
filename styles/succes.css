@@ -36,4 +36,7 @@ main{
     .product p{
         text-align: left;
     }
+    .grid-container{
+        width:60%;
+    }
 }
