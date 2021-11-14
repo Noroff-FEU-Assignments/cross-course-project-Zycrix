@@ -4,6 +4,9 @@
   --main-color: #849A9F;
   --secound-color:#0a3540;
 }
+select{
+  font-family: nimbus-sans;
+}
 .material-icons {
   font-size: 1.5em;
   padding-bottom: 0;
