@@ -7,6 +7,9 @@
 select{
   font-family: nimbus-sans;
 }
+label{
+  font-family: nimbus-sans;
+}
 .material-icons {
   font-size: 1.5em;
   padding-bottom: 0;
