@@ -38,14 +38,6 @@ label{
     font-family: nimbus-sans;
     text-transform:capitalize ;
 }
-input[type="submit"]{
-    background-color: var(--secound-color);
-    color:white;
-    padding: .7rem;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    margin-top:1.5rem;
-}
 .contact-info{
     max-width:85%;
     margin:0 auto;
@@ -82,6 +74,9 @@ input[type="submit"]{
     label{
         padding-top:1rem;
     }
+    input{
+        height:2rem;
+    }
     .thanks{
         width:40%;
         margin: 3rem auto;
@@ -98,5 +93,9 @@ input[type="submit"]{
     .button{
         width:100%;
         margin:0 auto;
+    }
+    .button-container{
+        width:40%;
+        margin: 3rem auto;
     }
 }

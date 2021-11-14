@@ -64,7 +64,7 @@ input{
 .add-cart{
     color:white;
     background-color:var(--secound-color);
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     width: 100%;
     text-align: center;
     border-radius: 3rem;
@@ -74,6 +74,9 @@ input{
     font-size:1.3rem;
     max-width: 90%;
     margin: 3rem auto 5rem;
+}
+.heart{
+    display:none;
 }
 @media (min-width:700px){
     .p-img img{
@@ -108,7 +111,7 @@ input{
         padding:0;
         margin: auto 0;
         color:black;
-        display:inline;
+        display:none;
     
     }
     .heart:hover{
@@ -132,7 +135,12 @@ input{
         width:50%;
         font-size:1.6rem;
     }
-
+.add-cart:hover{
+    background-color: white;
+    border:0.5rem var(--secound-color) solid;
+    color:black;
+    padding:0.5rem 0;
+}
     .asdasd{
         display:grid;
         margin: 0 auto 5rem;
@@ -145,10 +153,5 @@ input{
         ;
         width:66.6%;
         gap:2rem;
-    }
-}
-@media (max-width: 250px){
-    .heart{
-        display:none;
     }
 }

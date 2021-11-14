@@ -209,6 +209,9 @@ nav {
   width: 100%;
   text-align: left;
 }
+.product img{
+  height: 30vh;
+}
 .product1 {
   grid-area: product1;
 }
@@ -313,6 +316,12 @@ nav {
   display:inline-block;
   padding:1rem;
 }
+.fav{
+  display:none;
+}
+.icon{
+  display:none;
+}
 @media (max-width: 350px) {
   .footer-section-two li{
     padding:.5rem;
@@ -337,6 +346,14 @@ nav {
     border-radius: 3rem;
     color: white;
     margin-top: 1rem;
+  }
+  .product{
+    height:35rem;
+  }
+  .product img{
+    min-height:60vh;
+    object-fit: fill;
+
   }
   .grid-container {
     grid-template-areas:
@@ -477,9 +494,8 @@ nav {
   }
   .product {
     font-size: 1em;
-    margin: 10px;
-    padding: 5px;
-    max-width: 100%;
+    width: 300px;
+    padding:0.2rem;
   }
   .product1 {
     grid-area: product1;

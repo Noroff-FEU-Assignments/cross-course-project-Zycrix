@@ -43,22 +43,30 @@
           <h1>checkout</h1>
           <form class="form">
             <div class="form_container"> 
-              <label for="f_name" class="f_name label">first name</label>
-              <input type="text" id="f_name">
-              <label for="l_name" class="l_name label">last name</label>
-              <input type="text" id="l_name">
-              <label for="p_number" class="p_number label">phone number</label>
-              <input type="number" id="p_number">
-              <label for="e_adress" class="e_adress label">emain adress</label>
-              <input type="email" id="e_adress">
-              <label for="s_name" class="s_name label">street name</label>
-              <input type="text" id="s_name">
-              <label for="s_number" class="s_number label">street number</label>
-              <input type="number" id="s_number">
-              <label for="city" class="city label">city</label>
-              <input type="text" id="city">
-              <label for="p_code" class="p_code label">postal code</label>
-              <input type="number" id="p_code">
+              <div class="name">
+                <label for="f_name" class="f_name label">first name</label>
+                <input type="text" id="f_name">
+                <label for="l_name" class="l_name label">last name</label>
+                <input type="text" id="l_name">
+              </div>
+              <div class="contact">
+                <label for="p_number" class="p_number label">phone number</label>
+                <input type="number" id="p_number">
+                <label for="e_adress" class="e_adress label">email adress</label>
+                <input type="email" id="e_adress">
+              </div>
+              <div class="street">
+                <label for="s_name" class="s_name label">street name</label>
+                <input type="text" id="s_name">
+                <label for="s_number" class="s_number label">street number</label>
+                <input type="number" id="s_number">
+              </div>
+              <div class="city">
+                <label for="city" class="city label">city</label>
+                <input type="text" id="city">
+                <label for="p_code" class="p_code label">postal code</label>
+                <input type="number" id="p_code">
+              </div>
               <select name="shipping_method">
                 <option>Standard shipping</option>
                 <option>Express shipping</option>
@@ -77,14 +85,22 @@
           <h2 class="payment">visa payment</h2>
           <form class="form">
             <div class="form_container">
-              <label for="owner" class="owner">owner</label>
-              <input type="text" id="owner">
-              <label for="c_number" class="c_number">cart number</label>
-              <input type="number" id="c_number">
-              <label for="exp_date" class="exp_date">expiration date</label>
-              <input type="number" id="exp_date">
-              <label for="cvv" class="cvv">CVV code</label>
-              <input type="number" id="cvv">
+              <div class="owner">
+                <label for="owner" class="owner">owner</label>
+                <input type="text" id="owner">
+              </div>
+              <div class="number">    
+                <label for="c_number" class="c_number">card number</label>
+                <input type="number" id="c_number">
+              </div>
+              <div class="date">
+                <label for="exp_date" class="exp_date">expiration date</label>
+                <input type="number" id="exp_date">
+              </div>
+              <div class="cvv">
+                <label for="cvv" class="cvv">CVV code</label>
+                <input type="number" id="cvv">
+              </div>
             </div>
           </form>
             <a href="succes.html" class="main-cta">place order</a>
