@@ -84,12 +84,12 @@ select{
         width:40%;
     } 
     input{
-        width:70%;
+        width:60%;
         height:2rem;
         margin:auto;
     }
     label{
-        width:30%;
+        width:40%;
         padding:1rem;
     }
     .name{
@@ -110,7 +110,7 @@ select{
         
     }
     .city label{
-        width:30%;
+        width:40%;
     }
     select{
         width:100%;
