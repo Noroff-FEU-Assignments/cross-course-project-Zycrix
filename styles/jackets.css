@@ -108,8 +108,7 @@ label{
         display:none;
     }
     .product img{
-        min-height:25em;
-  
+        height:100%;
     }
     .sort-container{
         display:none;
@@ -148,7 +147,7 @@ label{
           "product1 product2 product3 product4"
           "product5 product6 product7 product8";
         padding-bottom: 100px;
-        max-width: 1300px;
+        width:60%;
         margin: 30px auto;
       }
 }

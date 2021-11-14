@@ -216,7 +216,7 @@ nav {
   text-align: left;
 }
 .product img{
-  height: 30vh;
+  height: 100%;
 }
 .product1 {
   grid-area: product1;
@@ -357,7 +357,7 @@ nav {
     height:35rem;
   }
   .product img{
-    min-height:60vh;
+    height:100%;
     object-fit: fill;
 
   }
@@ -494,7 +494,7 @@ nav {
       "product1 product2 product3"
       "product4 product5 product6";
     padding-bottom: 100px;
-    width:80% ;
+    width:40% ;
     margin: 30px auto;
   }
   .product {
@@ -529,7 +529,7 @@ nav {
   .product img {
     width: 100%;
     object-fit: cover;
-    height: 400px;
+    height: 100%;
   }
   .product h3 {
     margin: 10px 0;
