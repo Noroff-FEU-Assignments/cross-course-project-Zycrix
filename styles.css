@@ -1,13 +1,32 @@
 /*mobile*/
 /*general rules*/
-:root{
-  --main-color: #849A9F;
-  --secound-color:#0a3540;
+:root {
+  --main-color: #849a9f;
+  --secound-color: #0a3540;
 }
-select{
+svg {
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+  animation: spin 2.5s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+select {
   font-family: nimbus-sans;
 }
-label{
+label {
   font-family: nimbus-sans;
 }
 .material-icons {
@@ -25,20 +44,20 @@ label{
   color: white;
   margin-top: 1rem;
 }
-.main-cta{
+.main-cta {
   background-color: #ab533f;
 }
 .button-container a {
   color: white;
 }
-.accesibility{
- display:none;
+.accesibility {
+  display: none;
 }
-.nav-icon:hover{
-  color:white;
+.nav-icon:hover {
+  color: white;
 }
-.fav:hover{
-  color:red;
+.fav:hover {
+  color: red;
 }
 p {
   font-family: nimbus-sans;
@@ -120,7 +139,7 @@ nav {
 .nav-pages a {
   color: black;
 }
-.active a{
+.active a {
   color: white;
 }
 /*nav icons*/
@@ -129,17 +148,17 @@ nav {
   width: 33.3%;
   text-align: right;
 }
-.nav-icon{
-  font-size:1.3rem;
+.nav-icon {
+  font-size: 1.3rem;
 }
 .nav-icons > * {
   padding-right: 0rem;
 }
-.nav-icons ul{
+.nav-icons ul {
   list-style: none;
 }
-.nav-icons li{
-  display:inline-block;
+.nav-icons li {
+  display: inline-block;
 }
 /*End of nav*/
 
@@ -174,7 +193,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 .intro h2 {
   font-size: 1.2rem;
@@ -185,7 +204,6 @@ nav {
 }
 .about-button {
   background-color: #0a3540;
-
 }
 .button-container {
   display: flex;
@@ -215,7 +233,7 @@ nav {
   width: 100%;
   text-align: left;
 }
-.product img{
+.product img {
   height: 100%;
 }
 .product1 {
@@ -312,25 +330,25 @@ nav {
   background-color: rgba(35, 119, 140, 61%);
   padding: 2rem 0;
 }
-.footer-section-two ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-  text-align:center;
+.footer-section-two ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.footer-section-two li{
-  display:inline-block;
-  padding:1rem;
+.footer-section-two li {
+  display: inline-block;
+  padding: 1rem;
 }
-.fav{
-  display:none;
+.fav {
+  display: none;
 }
-.icon{
-  display:none;
+.icon {
+  display: none;
 }
 @media (max-width: 350px) {
-  .footer-section-two li{
-    padding:.5rem;
+  .footer-section-two li {
+    padding: 0.5rem;
   }
   .nav-icons {
     display: none;
@@ -353,13 +371,12 @@ nav {
     color: white;
     margin-top: 1rem;
   }
-  .product{
-    height:35rem;
+  .product {
+    height: 35rem;
   }
-  .product img{
-    height:100%;
+  .product img {
+    height: 100%;
     object-fit: fill;
-
   }
   .grid-container {
     grid-template-areas:
@@ -397,7 +414,7 @@ nav {
     order: 1;
     text-align: left;
     flex-grow: 1;
-    padding: 2rem 1rem;
+    padding: 0.5rem 1rem;
     height: 6rem;
   }
   .menu {
@@ -419,7 +436,7 @@ nav {
   }
   .nav-list a {
     text-decoration: none;
-    
+
     font-size: 2rem;
   }
   .nav-list li {
@@ -451,7 +468,7 @@ nav {
     background-position-y: 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 68vh;
+    min-height: calc(100vh - 282px);
     padding-top: 150px;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
     margin-bottom: 2rem;
@@ -494,13 +511,13 @@ nav {
       "product1 product2 product3"
       "product4 product5 product6";
     padding-bottom: 100px;
-    width:40% ;
+    width: 40%;
     margin: 30px auto;
   }
   .product {
     font-size: 1em;
     width: 100%;
-    padding:0.2rem;
+    padding: 0.2rem;
   }
   .product1 {
     grid-area: product1;
@@ -558,19 +575,19 @@ nav {
     background-color: white;
     border: 0.5rem #ab533f solid;
     padding: 1rem 1.5rem;
-    color:black;
+    color: black;
   }
   .about-button:hover {
     border: 0.5rem #0a3540 solid;
   }
-  .footer-section-two li{
-    padding:.5rem;
+  .footer-section-two li {
+    padding: 0.5rem;
   }
-  .footer-section-two ul{
-    display:flex;
+  .footer-section-two ul {
+    display: flex;
     justify-content: space-around;
   }
-  .social img{
-    width:4rem;
+  .social img {
+    width: 4rem;
   }
 }

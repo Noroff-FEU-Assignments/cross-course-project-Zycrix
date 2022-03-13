@@ -9,7 +9,18 @@
         <link rel="stylesheet" href="https://use.typekit.net/fsb6ams.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="styles/product.css">
+        <link rel="stylesheet" href="styles/product.css">        
+        <!-- Hotjar Tracking Code for https://heuristic-raman-3c0011.netlify.app/index.html -->
+        <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:2873423,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
     </head>
     <body>
       <header class="nav-bar">
@@ -40,13 +51,10 @@
         </nav>
       </header>
         <main>
-          <section class="asdasd">
+          <section class="main-container">
             <div class="p-img">
-              <img src="images/black-jacket.old.jpg" class="product-img" alt="black jacket with a belt"/>
             </div>
             <div class="product-info">
-              <h1>black jacket <a href=""><span class="material-icons heart">favorite</span></a></h1>
-              <h2>200.00$</h2>
             </div>
             <div class="drop-down-size">
           
@@ -71,9 +79,10 @@
               <input type="checkbox" id="xlarge">
             </div>
             <div class="cta">
-              <a href="cart.html" class="add-cart">add to cart</a>
+              <button class = "add-cart">add to cart</button>
             </div>
-            <p class="product-description">The Black Jacket is the perfect jacket for every occation, either it's for your next great adventure or for the buss ride to work you can be sure the black jacket will keep you warm and comfortable and look great while doing so.</p>
+            <div class="desc">
+            </div>
           </section>
         </main>
         <footer>
@@ -105,4 +114,5 @@
             </ul>
           </section>
         </footer>
+        <script src = "js/product.js" type = "module"></script>
     </body>

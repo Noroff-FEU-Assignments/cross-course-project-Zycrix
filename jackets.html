@@ -10,6 +10,17 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="styles/jackets.css">
+        <!-- Hotjar Tracking Code for https://heuristic-raman-3c0011.netlify.app/index.html -->
+        <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:2873423,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
     </head>
     <body>
       <header class="nav-bar">
@@ -46,7 +57,7 @@
           <section class="main-content">
             <h1 class="main-header">the autumn collection</h1>
             <!--                MOBILE SORT AND CATEGORY DROP DOWN MENUS-->
-            <div class="sort-container">
+<!--             <div class="sort-container">
               <div class="drop-down-one">
                 <input type="checkbox" id="category">
                 <label for="category" class="drop-down">category <span class="material-icons arrow">
@@ -67,78 +78,15 @@
                   <li>price "decending"</li>
                 </ul>
               </div>  
-           </div>
+           </div> -->
       
            <!--             DESKTOP CATEGORY MENU        -->
            <div class="gender-menu menu">
-            <h2>men</h2>
-            <h2>women</h2>
+            <h2 class = "men">men</h2>
+            <h2 class = "women">women</h2>
           </div>
             <div class="grid-container">
-              <div class="product one">
-                <div class="overlay-container">  
-                  <a href="product.html"><img src=images/yellow-coat_oppdatert.jpg alt="a yellow coat" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-                </div>
-                <h3>yellow coat</h3>
-                <p>150.00$</p>
-              </div> 
-              <div class="product two">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/black-jacket_oppdatert.jpg alt="a black jacket" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-               </div>
-                <h3>black jacket</h3>
-                <p>200.00$</p>
-              </div>              
-              <div class="product three">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/white-jacket_oppdatert.jpg alt="a white jacket" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-                </div>
-                <h3>white jacket</h3>
-                <p>270.00$</p>
-              </div>
-              <div class="product four">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/yellow-rain_oppdatert.jpg alt="a yellow rain coat" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-                </div>
-                <h3>yellow rain jacket</h3>
-                <p>150.00$</p>
-              </div>
-              <div class="product five">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/casual-jacket_oppdatert.jpg alt="a casual jacket" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-               </div>
-                <h3>casual jacket</h3>
-                <p>200.00$</p>
-              </div>
-              <div class="product six">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/hiking-jacket_oppdatert.jpg alt="a hiking jacket" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-                </div>
-                <h3>hiking jacket</h3>
-                <p>170.00$</p>
-              </div>
-              <div class="product seven">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/lumber-jack_oppdatert.jpg alt="a yellow rain coat" class="product-img" id="tst"></a>
-                  <span class="material-icons icon">favorite</span>
-                </div>
-                <h3>lumber jack jacket</h3>
-                <p>100.00$</p>
-              </div>
-              <div class="product eight">
-                <div class="overlay-container"> 
-                  <a href="product.html"><img src=images/warm-jacket_oppdatert.jpg alt="a white jacket" class="product-img"></a>
-                  <span class="material-icons icon">favorite</span>
-                </div>
-                <h3>warm jacket</h3>
-                <p>150.00$</p>
-              </div>
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.42 191.01"><defs><style>.cls-1{fill:lime;}.cls-2{fill:#fff;}</style></defs><path d="M442.72,215.5c7.1-31.37,94.35-31.4,101.48,0,8.84,38.9-110,105.14-101.13,144,7.12,31.31,94,31.28,101.13,0C553,320.64,433.9,254.4,442.72,215.5Z" transform="translate(-442.25 -191.96)"/><path class="cls-1" d="M493.28,288h0Z" transform="translate(-442.25 -191.96)"/><path class="cls-2" d="M468.23,247.28c3.53-17.71,46.58-17.71,50.1,0,4.38,22-54.47,59.46-50.1,81.44,3.53,17.71,46.58,17.71,50.1,0C522.71,306.74,463.85,269.27,468.23,247.28Z" transform="translate(-442.25 -191.96)"/></svg>
             </div>
           </section>
         </main>
@@ -171,4 +119,5 @@
             </ul>
           </section>
         </footer>
+        <script src = "js/jackets.js" type = "module"></script>
     </body>
