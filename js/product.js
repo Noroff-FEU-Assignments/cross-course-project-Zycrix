@@ -14,7 +14,7 @@ let test = [
 
 console.log(test);
 
-test = new {name: "hei", age: 10, alive: true}
+// test = new {name: "hei", age: 10, alive: true}
 
 console.log(test + " asdasdas");
 
