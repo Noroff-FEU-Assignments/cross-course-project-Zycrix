@@ -22,22 +22,19 @@
 .product-info h2 {
   font-size: 1.3rem;
 }
-.drop-down-size {
-  max-width: 90%;
+.drop-down-size select {
+  width: 100%;
   margin: auto;
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
   padding: 0.3rem;
-  margin: 1rem;
 }
 label {
   font-size: 1.2rem;
   text-transform: capitalize;
 }
-.drop-down-size p {
-  margin: 0;
-}
-
 .drop {
   display: none;
 }
@@ -150,6 +147,7 @@ input {
     border: 0.5rem var(--secound-color) solid;
     color: black;
     padding: 0.5rem 0;
+    cursor: pointer;
   }
   .main-container {
     display: grid;
@@ -162,5 +160,15 @@ input {
       "product_img product-description";
     width: 67%;
     /* gap: 1rem; */
+  }
+  .success {
+    text-align: center;
+    font-family: nimbus-sans;
+    font-size: 1.4rem;
+  }
+  .success::after {
+    content: "Added to cart!";
+    text-align: center;
+    color: green;
   }
 }

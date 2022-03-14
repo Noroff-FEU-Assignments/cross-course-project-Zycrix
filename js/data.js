@@ -120,7 +120,7 @@ export const jackets = [
     id: 10,
     main: true
   },{
-    name: "black jacket",
+    name: "dark jacket",
     color:"black",
     price:"200.00$",
     onSale:false,

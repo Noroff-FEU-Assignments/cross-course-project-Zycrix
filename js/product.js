@@ -1,25 +1,7 @@
 import {jackets as jackets} from "./data.js";
-// import {test as test} from "./tst.js";
-let test = [
-  {
-    name: "kristoffer",
-    age: 23, 
-    alive: true
-  },{
-    name: "tore",
-    age: 50,
-    alive: false
-  }
-];
-
-console.log(test);
-
-// test = new {name: "hei", age: 10, alive: true}
-
-console.log(test + " asdasdas");
 
 //Target HTML elements
-const mainContainer = document.querySelector(".main-container");
+const cta = document.querySelector(".cta");
 const img = document.querySelector(".p-img");
 const info = document.querySelector(".product-info");
 const desc = document.querySelector(".desc");
@@ -43,20 +25,21 @@ function createHtml (data){
 
 
 function addToCart(){
-  let key = jackets[productIndex].name;
+  let key = jackets[productId].name;
   let value = jackets[productId].id;
 
   let existing = window.sessionStorage.getItem(key);
 
   if(!existing){
     window.sessionStorage.setItem(key, value);
-    console.log(window.sessionStorage.getItem(key));
   }
   else{
     console.log(typeof window.sessionStorage.getItem(key));
     let num = Number(existing);
     console.log(typeof num);
-  }
+  };
+  cta.classList.add("success");
+  button.style.marginBottom = "1rem";
 }
 
 console.log(jackets[productId]);
