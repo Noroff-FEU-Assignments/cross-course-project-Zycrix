@@ -4,6 +4,9 @@
   --main-color: #849a9f;
   --secound-color: #0a3540;
 }
+main {
+  min-height: calc(100vh - 564px);
+}
 svg {
   max-width: 100px;
   margin: 0 auto;
@@ -286,6 +289,7 @@ nav {
   margin: 0;
   text-align: left;
   padding: 1rem;
+  height: 10rem;
 }
 .footer-section-one a {
   color: white;
@@ -298,6 +302,7 @@ nav {
 }
 .footer-section-one ul {
   padding: 0;
+  align-self: center;
 }
 .footer-section-one li {
   list-style: none;
@@ -564,7 +569,7 @@ nav {
     justify-content: space-between;
   }
   .footer-section-one ul {
-    margin: 3rem 15rem 3rem 5rem;
+    margin: 1rem 15rem 3rem 5rem;
   }
   .container-adress {
     text-align: left;
