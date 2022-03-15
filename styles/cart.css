@@ -55,7 +55,6 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  text-transform: capitalize;
 }
 .target {
   border-top: 1px black solid;
@@ -82,7 +81,7 @@
   .cart_grid {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   .cart_product {
@@ -97,6 +96,7 @@
   .total {
     border-left: 1px black solid;
     width: 100%;
+    font-size: 1rem;
   }
   .product_img {
     display: inline-block;
@@ -114,5 +114,13 @@
   }
   .button:hover {
     border: 0.5rem var(--secound-color) solid;
+  }
+  .shipping_price {
+    text-align: right;
+    font-size: 1.3rem;
+  }
+  .help {
+    display: flex;
+    align-items: center;
   }
 }

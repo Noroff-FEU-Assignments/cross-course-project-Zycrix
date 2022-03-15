@@ -1,4 +1,5 @@
 import { jackets as jackets } from "./data.js";
+import{menu as menu} from "./menu.js";
 
 //Target HTML elements
 
@@ -57,3 +58,5 @@ men.addEventListener("click", genderFilter);
 women.addEventListener("click", genderFilter);
 
 createHtml(mainDisplay);
+
+menu();

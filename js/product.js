@@ -1,4 +1,5 @@
 import {jackets as jackets} from "./data.js";
+import {menu as menu} from "./menu.js";
 
 //Target HTML elements
 const cta = document.querySelector(".cta");
@@ -46,4 +47,6 @@ console.log(jackets[productId]);
 createHtml(product);
 
 button.onclick = addToCart;
+
+menu();
 

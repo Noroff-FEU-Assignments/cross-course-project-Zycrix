@@ -1,10 +1,15 @@
-.product-img {
+.p-img img {
   display: block;
   width: 90%;
   margin: 2rem auto;
-  max-height: 70vh;
+  height: 50vh;
   object-fit: cover;
   object-position: 50% 40%;
+}
+.p-img img {
+  max-width: 100%;
+  padding: 0;
+  margin: 1rem auto;
 }
 .product-info {
   display: flex;
@@ -41,26 +46,17 @@ label {
 input {
   display: none;
 }
-#size {
-  display: none;
-}
-#size:checked ~ .drop {
-  display: block;
-}
-.size {
-  display: flex;
-  justify-content: space-between;
-}
-.arrow {
-  padding: 0;
-  font-size: 1.3rem;
+.drop-down-size {
+  padding-top: 1rem;
+  width: 90%;
+  margin: 0 auto;
 }
 .cta {
   width: 93%;
   margin: 0 auto;
 }
 .add-cart {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   color: white;
   background-color: var(--secound-color);
@@ -70,6 +66,7 @@ input {
   border-radius: 3rem;
   display: block;
   border: unset;
+  margin-top: 2rem;
 }
 .product-description {
   font-size: 1.3rem;
@@ -78,6 +75,17 @@ input {
 }
 .heart {
   display: none;
+}
+.success {
+  text-align: center;
+  font-family: nimbus-sans;
+  font-size: 1rem;
+}
+.success::after {
+  content: "Added to cart!";
+  text-align: center;
+  color: green;
+  font-size: 1.4rem;
 }
 @media (min-width: 700px) {
   .p-img img {
@@ -98,15 +106,13 @@ input {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    transform: translate(-20px, 0);
+    transform: translate(-10px, 0);
   }
   .product-info h1 {
-    font-size: 3rem;
-    display: flex;
-    justify-content: space-between;
+    font-size: 2rem;
   }
   .product-info h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .product-info h1,
   h2 {
@@ -159,16 +165,17 @@ input {
       "product_img cta"
       "product_img product-description";
     width: 67%;
-    /* gap: 1rem; */
-  }
-  .success {
-    text-align: center;
-    font-family: nimbus-sans;
-    font-size: 1.4rem;
-  }
-  .success::after {
-    content: "Added to cart!";
-    text-align: center;
-    color: green;
+    gap: 1rem;
   }
 }
+/* @media (min-width: 1000px) {
+  .main-container {
+    width: 90%;
+    overflow: hidden;
+  }
+  .product-info {
+    box-sizing: border-box;
+    margin-left: 7.5rem;
+    font-size: 1.5rem;
+  }
+} */

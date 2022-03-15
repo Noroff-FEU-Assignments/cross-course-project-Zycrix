@@ -1,4 +1,6 @@
 import {jackets as jackets} from "./data.js";
+import {menu as menu} from "./menu.js";
+
 const container = document.querySelector(".product-container");
 
 //Get items from session storage
@@ -90,6 +92,7 @@ function removeItem(){
   let newArray = productArray.filter((productArray)=>productArray.id !== Number(target))
 };
 
+menu();
 
 
 

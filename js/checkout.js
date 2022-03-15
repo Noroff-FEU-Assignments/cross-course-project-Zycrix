@@ -1,7 +1,11 @@
+import{menu as menu} from "./menu.js";
+
 const select = document.querySelector("select");
 const shippingPrice = document.querySelector(".s_cost");
 const totalPrice = document.querySelector(".t_cost");
 const totalItems = window.sessionStorage.getItem("total");
+const placeOrder = document.querySelector(".main-cta");
+
 let shipping = "";
 
 
@@ -31,4 +35,7 @@ shippingOption();
 
 document.onload = shippingOption;
 select.addEventListener("change", shippingOption);
+placeOrder.addEventListener("click", ()=>window.sessionStorage.clear());
+
+menu();
 

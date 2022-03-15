@@ -1,179 +1,193 @@
-main{
-    font-family: nimbus-sans;
+main {
+  font-family: nimbus-sans;
 }
-H1, h2{
-    text-align:center;
-    text-transform: capitalize;
+H1,
+h2 {
+  text-align: center;
+  text-transform: capitalize;
 }
-P{
-    text-transform: capitalize;
+P {
+  text-transform: capitalize;
 }
-.form_container{
-    display:flex;
+.form_container {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  max-width: 80%;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+label {
+  margin: 0.5rem 0;
+}
+select {
+  margin: 1rem 0;
+}
+select:se .flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.line {
+  width: 85%;
+  background-color: black;
+  height: 0.05rem;
+  margin: 0 auto;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.street {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.city {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.main-cta {
+  all: unset;
+  width: 80%;
+  display: block;
+  background-color: var(--secound-color);
+  margin: 2rem auto;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+.owner {
+  display: flex;
+  flex-direction: column;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+}
+.cvv {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container {
+  margin: 0 auto;
+  width: 80%;
+}
+@media (min-width: 700px) {
+  .form {
+    width: 80%;
+    padding: 0.2rem;
+  }
+  input {
+    width: 60%;
+    height: 2rem;
+    margin: auto;
+  }
+  label {
+    width: 40%;
+    padding: 1rem;
+  }
+  .name {
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact {
+    flex-direction: row;
+    width: 100%;
+  }
+  .street {
+    flex-direction: row;
+    width: 100%;
+  }
+  .city {
+    flex-direction: row;
+    width: 100%;
+  }
+  .city label {
+    width: 40%;
+  }
+  select {
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 30px;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+  }
+  .flex-container {
+    width: 80%;
     flex-direction: column;
-}
-.form{
-    max-width:80%;
-    margin:0 auto;
-    text-transform: capitalize;
-}
-label{
-    margin:0.5rem 0;
-}
-select{
-    margin:1rem 0;
-}
-.flex-container{
-    display:flex;
-    justify-content: space-between;
-    width:80%;
-    margin:0 auto;
-}
-.line{
-    width:85%;
-    background-color: black;
-    height:0.05rem;
-    margin:0 auto;
-}
-.name{
-    display:flex;
-    flex-direction: column;
-}
-.contact{
-    display:flex;
-    flex-direction: column;
-}
-.street{
-    display: flex;
-    flex-direction: column;
-}
-.city{
-    display: flex;
-    flex-direction: column;
-}
-.main-cta{
-    all:unset;
-    width:80%;
-    display:block;
-    background-color: var(--secound-color);
-    margin:2rem auto;
-    padding: 1rem 0.5rem;
-    text-align: center;
-    color:white;
-    border-radius: 2rem;
-    text-transform: uppercase;
-}
-.owner{
-    display:flex;
-    flex-direction: column;
-}
-.number{
-    display:flex;
-    flex-direction: column;
-}
-.date{
-    display:flex;
-    flex-direction: column;
-}
-.cvv{
-    display:flex;
-    flex-direction: column;
-}
-@media(min-width:700px){
-    .form{
-        width:40%;
-    } 
-    input{
-        width:60%;
-        height:2rem;
-        margin:auto;
-    }
-    label{
-        width:40%;
-        padding:1rem;
-    }
-    .name{
-        flex-direction: row;
-        width:100%;
-    }
-    .contact{
-        flex-direction: row;
-        width:100%;
-    }
-    .street{
-        flex-direction: row;
-        width:100%;
-    }
-    .city{
-        flex-direction: row;
-        width:100%;
-        
-    }
-    .city label{
-        width:40%;
-    }
-    select{
-        width:100%;
-        margin:2rem auto;
-        border-radius: 30px;
-        padding:0.3rem;
-        font-size: 1.3rem;
-    }
-    .flex-container{
-        width:40%;
-    }
-    .line{
-        width:40%;
-    }
-    .owner{
-        flex-direction: row;
-        width:80%;
-        margin:0 auto;
-    }
-    .owner label, input{
-        width:100%;
-        margin:1rem 0;
-        padding:0;
-    }
-    .number{
-        flex-direction: row;
-        width:80%;
-        margin:0 auto;
-    }
-    .number label, input{
-        width:100%;
-        margin:1rem 0;
-        padding:0;
-    }
-    .date{
-        flex-direction: row;
-        width:80%;
-        margin:0 auto;
-    }
-    .date label, input{
-        width:100%;
-        margin:1rem 0;
-        padding:0;
-    }
-    .cvv{
-        flex-direction: row;
-        width:80%;
-        margin:0 auto;
-    }
-    .cvv label, input{
-        width:100%;
-        margin:1rem 0;
-        padding:0;
-    }
-    .main-cta{
-        margin:5rem auto;
-        width:20%;
-    }
-    .main-cta:hover{
-        background-color:white;
-        border: 0.5rem var(--secound-color) solid;
-        cursor: pointer;
-        color:black;
-        padding:0.5rem 0;
-    }
+  }
+  .line {
+    width: 80%;
+  }
+  .owner {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .owner label,
+  input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .number {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .number label,
+  input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .date {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .date label,
+  input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .cvv {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .cvv label,
+  input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .main-cta {
+    margin: 5rem auto;
+    width: 20%;
+  }
+  .main-cta:hover {
+    background-color: white;
+    border: 0.5rem var(--secound-color) solid;
+    cursor: pointer;
+    color: black;
+    padding: 0.5rem 0;
+  }
 }

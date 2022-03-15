@@ -1,4 +1,5 @@
 import {jackets as jackets} from "./data.js";
+import{menu as menu} from "./menu.js";
 
 const product = document.querySelectorAll(".product");
 const tbd = 6;    //To be displayed
@@ -13,8 +14,7 @@ function bestSellers(data){
    </div>
    <h3>${data[i].name}</h3>
    <p>${data[i].price}</p>
-    `
-    console.log(data[i].id);
+   `
   }
 }
 
@@ -23,4 +23,4 @@ let newJackets = jackets.filter(function (jackets){
 })
 
 bestSellers(newJackets);
-
+menu();

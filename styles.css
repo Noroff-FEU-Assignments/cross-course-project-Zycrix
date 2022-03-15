@@ -39,7 +39,7 @@ label {
   color: black;
 }
 .button {
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   padding: 1rem 1.5rem;
   min-width: 10rem;
   text-align: center;
@@ -85,12 +85,13 @@ body {
 }
 header {
   background-color: #849a9f;
-  padding: 10px;
 }
 nav {
   display: flex;
   flex-direction: row;
   align-content: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 /*just logo things*/
@@ -115,8 +116,23 @@ nav {
 }
 /*Checkbox hack*/
 .nav-list {
-  padding-top: 2rem;
   padding-left: 0;
+  width: 100%;
+  margin: 0;
+  order: 4;
+  background-color: var(--main-color);
+}
+.list-container {
+  display: block;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  bottom: -199px;
+}
+.nav-list ul {
+  margin: 0 !important;
+}
+.hidden {
   display: none;
 }
 #burger-menu:checked ~ .nav-list {
@@ -127,9 +143,16 @@ nav {
 }
 .burger-menu {
   padding-left: 0.5rem;
+  padding-top: 0;
+}
+.burger-menu-span {
+  align-self: center;
+  padding: 0;
 }
 .menu {
   width: 33.3%;
+  display: flex;
+  align-items: center;
 }
 .nav-pages {
   font-size: 1.5rem;
@@ -196,7 +219,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .intro h2 {
   font-size: 1.2rem;
@@ -215,7 +238,7 @@ nav {
 /*intro end showcase start*/
 
 .showcase h2 {
-  margin-top: 3em;
+  margin-top: 0;
 }
 .showcase {
   display: flex;
@@ -235,6 +258,7 @@ nav {
   font-size: 1em;
   width: 100%;
   text-align: left;
+  text-transform: capitalize;
 }
 .product img {
   height: 100%;
@@ -407,7 +431,7 @@ nav {
   }
   .logo-div img {
     height: auto;
-    width: 10rem;
+    width: 8rem;
     object-fit: cover;
   }
   .logo {
@@ -415,8 +439,21 @@ nav {
     flex: 1;
     padding: 0;
   }
+  .menu {
+    display: none;
+  }
+  .list-container {
+    all: unset;
+    flex: 6;
+    padding-top: 0;
+    display: flex;
+    padding: 1rem;
+    order: 2;
+  }
   .logo-div {
     order: 1;
+    display: flex;
+    align-items: center;
     text-align: left;
     flex-grow: 1;
     padding: 0.5rem 1rem;
@@ -442,19 +479,22 @@ nav {
   .nav-list a {
     text-decoration: none;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .nav-list li {
-    margin: 0 40px;
+    margin: 0 15px;
   }
   .nav-list a:hover {
     color: white;
   }
   .nav-list {
-    flex: 6;
-    padding-top: 0;
     display: block;
-    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    margin-top: 0 !important;
   }
   .nav-icons {
     justify-items: right;
@@ -466,7 +506,7 @@ nav {
     padding: 10px;
   }
   .material-icons {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .hero-img {
     background-position-x: 50%;
@@ -480,7 +520,7 @@ nav {
   }
   .hero-img h1 {
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
     max-width: 700px;
     padding: 0;
     margin: 10rem auto 0;
@@ -490,8 +530,8 @@ nav {
     width: 300px;
     border-radius: 35px;
     text-align: center;
-    padding: 1.5rem 2rem;
-    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
   }
@@ -499,7 +539,7 @@ nav {
     font-size: 1.9rem;
   }
   .intro p {
-    max-width: 1000px;
+    max-width: 60%;
     display: block;
     margin: 0.1rem auto;
     padding: 0.5rem;
@@ -516,7 +556,7 @@ nav {
       "product1 product2 product3"
       "product4 product5 product6";
     padding-bottom: 100px;
-    width: 40%;
+    width: 60%;
     margin: 30px auto;
   }
   .product {
@@ -593,6 +633,12 @@ nav {
     justify-content: space-around;
   }
   .social img {
-    width: 4rem;
+    width: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase {
+    max-width: 60%;
+    margin: 0 auto;
   }
 }
