@@ -139,19 +139,19 @@ label {
   background-color: var(--main-color);
   padding: 0.5rem 1rem;
 }
-.gender-menu h2:hover {
-  background-color: var(--main-color);
-  border-radius: 30px;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
-    10px 10px 10px 0 rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
 @media (max-width: 350px) {
   .product img {
     min-height: 25rem;
   }
 }
 @media (min-width: 700px) {
+  .gender-menu h2:hover {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
+      10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
   .header-img {
     display: none;
   }
