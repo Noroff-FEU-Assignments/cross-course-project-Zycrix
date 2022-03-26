@@ -24,7 +24,7 @@ function createHtml(data) {
     container.innerHTML += `
     <div class="product">
 	    <div class="overlay-container">  
-		    <a href="product.html?id=${data[i].id}"><img src=${data[i].img} alt=${data[i].desc} class="product-img"></a>
+		    <a href="product.html?id=${data[i].id}" class = "product-link"><img src=${data[i].img} alt=${data[i].desc} class="product-img"></a>
         <span class="material-icons icon">favorite</span>
       </div>
       <h3>${data[i].name}</h3>
@@ -57,6 +57,26 @@ function genderFilter() {
   createHtml(gender);
 };
 
+//Store scroll position
+
+function storeScroll(){
+
+  const scrollPosition = window.scrollY;
+  window.sessionStorage.setItem("scrollPosition", scrollPosition);
+};
+
+//Use stored scroll position
+
+function returnScroll(){
+
+  const scrollPosition = window.sessionStorage.getItem("scrollPosition");
+  const origin = window.sessionStorage.getItem("origin");
+
+  if(origin === "cartBack"){
+    window.scrollTo(0, scrollPosition);
+    window.sessionStorage.removeItem("origin");    
+  };
+};
 
 //Call the function
 
@@ -69,6 +89,10 @@ women.addEventListener("mouseenter", ()=>women.classList.add("hover"));
 women.addEventListener("mouseleave", ()=>women.classList.remove("hover"));
 
 createHtml(mainDisplay);
+
+window.addEventListener("scroll", storeScroll);
+
+returnScroll();
 
 menu();
 

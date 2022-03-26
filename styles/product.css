@@ -57,6 +57,9 @@ input {
 .cta {
   width: 93%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .add-cart {
   font-size: 1.3rem;
@@ -69,7 +72,8 @@ input {
   border-radius: 3rem;
   display: block;
   border: unset;
-  margin-top: 2rem;
+  margin: 2rem 0;
+  flex-grow: 1;
 }
 .product-description {
   font-size: 1.3rem;
@@ -79,41 +83,19 @@ input {
 .heart {
   display: none;
 }
-
-.success {
-  text-align: center;
-  font-family: nimbus-sans;
-  font-size: 1rem;
-  position: relative;
-}
-.success::after {
-  content: "Added to cart!";
-  outline: 1px var(--secound-color) solid;
-  padding: 0.5rem 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  color: white;
+.to-cart,
+.browse {
   background-color: var(--main-color);
-  font-size: 1.4rem;
-  animation: fade 2s linear 3s;
-  animation-fill-mode: forwards;
+  border: none;
+  font-size: 1rem;
+  width: 45%;
+  padding: 0.5rem 0.2rem;
+  flex-shrink: 0.5;
+  border-radius: 2rem;
+  display: none;
 }
-@keyframes fade {
-  0% {
-    opacity: 100%;
-  }
-  25% {
-    opacity: 75%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 25%;
-  }
-  100% {
-    opacity: 0%;
-  }
+.added {
+  display: block;
 }
 @media (min-width: 700px) {
   .p-img img {
@@ -130,7 +112,7 @@ input {
   }
   .product-info {
     grid-area: product_info;
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -146,6 +128,14 @@ input {
   h2 {
     margin: 0.5rem;
   }
+  .added {
+    margin-top: 1rem;
+  }
+  .added:hover {
+    background-color: white;
+    border: 0.2rem var(--main-color) solid;
+    padding: 0.3rem 0;
+  }
   .heart {
     font-size: 3rem;
     padding: 0;
@@ -158,13 +148,13 @@ input {
   }
   .drop-down-size {
     grid-area: drop-down;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     place-self: center;
   }
   .cta {
     grid-area: cta;
-    width: 50%;
+    width: 60%;
     place-self: center;
     padding: 0;
     font-size: 2rem;
@@ -173,7 +163,7 @@ input {
   }
   .product-description {
     grid-area: product-description;
-    width: 50%;
+    width: 60%;
     font-size: 1.6rem;
   }
   .add-cart {

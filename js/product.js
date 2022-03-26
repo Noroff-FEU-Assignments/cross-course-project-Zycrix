@@ -7,7 +7,10 @@ const cta = document.querySelector(".cta");
 const img = document.querySelector(".p-img");
 const info = document.querySelector(".product-info");
 const desc = document.querySelector(".desc");
-const button = document.querySelector("button");
+const button = document.querySelector(".add-cart");
+const browse = document.querySelector(".browse");
+const toCart = document.querySelector(".to-cart");
+const main = document.querySelector("main");
 
 //Retrieve the querystring parameter
 const queryString = document.location.search;
@@ -35,8 +38,9 @@ function addToCart(){
   if(!existing){
     window.sessionStorage.setItem(key, value);
   };
-  cta.classList.add("success");
-  button.style.marginBottom = "1rem";
+  browse.classList.add("added");
+  toCart.classList.add("added");
+
   cartItems();
 };
 
@@ -47,3 +51,11 @@ button.onclick = addToCart;
 menu();
 
 cartItems();
+
+toCart.addEventListener("click", ()=>window.location.href = window.location.origin + "/cart.html");
+
+browse.addEventListener("click", ()=>{
+  window.location.href = window.location.origin + "/jackets.html";
+  window.sessionStorage.setItem("origin", "cartBack");
+});
+

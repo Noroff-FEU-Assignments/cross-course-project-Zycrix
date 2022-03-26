@@ -98,7 +98,7 @@ h1::after {
 }
 @media (min-width: 700px) {
   .form {
-    width: 80%;
+    width: 60%;
     padding: 0.2rem;
   }
   input {
@@ -137,11 +137,11 @@ h1::after {
     font-size: 1.3rem;
   }
   .flex-container {
-    width: 80%;
+    width: 60%;
     flex-direction: column;
   }
   .line {
-    width: 80%;
+    width: 60%;
   }
   .owner {
     flex-direction: row;
