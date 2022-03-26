@@ -3,6 +3,7 @@
 :root {
   --main-color: #849a9f;
   --secound-color: #0a3540;
+  --third-color: #ab533f;
 }
 main {
   min-height: calc(100vh - 564px);
@@ -376,6 +377,18 @@ nav {
 .icon {
   display: none;
 }
+.counter {
+  color: white;
+  background-color: red;
+  border-radius: 2rem;
+  height: 15px;
+  font-size: 0.8rem;
+  width: 15px;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+}
 @media (max-width: 350px) {
   .footer-section-two li {
     padding: 0.5rem;
@@ -608,6 +621,7 @@ nav {
   }
   .footer-section-one {
     justify-content: space-between;
+    flex-direction: row;
   }
   .footer-section-one ul {
     margin: 1rem 15rem 3rem 5rem;
@@ -635,6 +649,12 @@ nav {
   }
   .social img {
     width: 2rem;
+  }
+  .counter {
+    right: 60px;
+    font-size: 1rem;
+    height: 20px;
+    width: 20px;
   }
 }
 @media (min-width: 1400px) {

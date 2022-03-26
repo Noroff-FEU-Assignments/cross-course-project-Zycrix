@@ -31,10 +31,13 @@
   width: 100%;
   margin: auto;
   border: none;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   font-size: 1.2rem;
   padding: 0.3rem;
+  background-color: var(--secound-color);
+  box-sizing: border-box;
+  border-radius: 2rem;
+  color: white;
 }
 label {
   font-size: 1.2rem;
@@ -76,16 +79,41 @@ input {
 .heart {
   display: none;
 }
+
 .success {
   text-align: center;
   font-family: nimbus-sans;
   font-size: 1rem;
+  position: relative;
 }
 .success::after {
   content: "Added to cart!";
+  outline: 1px var(--secound-color) solid;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
   text-align: center;
-  color: green;
+  color: white;
+  background-color: var(--main-color);
   font-size: 1.4rem;
+  animation: fade 2s linear 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 @media (min-width: 700px) {
   .p-img img {
@@ -148,6 +176,9 @@ input {
     width: 50%;
     font-size: 1.6rem;
   }
+  .add-cart {
+    margin: 0;
+  }
   .add-cart:hover {
     background-color: white;
     border: 0.5rem var(--secound-color) solid;
@@ -165,7 +196,7 @@ input {
       "product_img cta"
       "product_img product-description";
     width: 67%;
-    gap: 1rem;
+    gap: 0;
   }
 }
 /* @media (min-width: 1000px) {

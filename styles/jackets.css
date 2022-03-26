@@ -145,13 +145,6 @@ label {
   }
 }
 @media (min-width: 700px) {
-  .gender-menu h2:hover {
-    background-color: var(--main-color);
-    border-radius: 30px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
-      10px 10px 10px 0 rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-  }
   .header-img {
     display: none;
   }
@@ -177,8 +170,22 @@ label {
     text-align: center;
     width: 20%;
   }
-  .gender-menu h2:hover {
+  /*   .gender-menu h2:hover {
     background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
+      10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  } */
+  .hover {
+    background-color: var(--main-color) !important;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
+      10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  .selected {
+    background-color: var(--main-color) !important;
     border-radius: 30px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
       10px 10px 10px 0 rgba(0, 0, 0, 0.4);

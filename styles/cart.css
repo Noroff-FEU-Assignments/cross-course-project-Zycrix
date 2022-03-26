@@ -114,6 +114,7 @@
   }
   .button:hover {
     border: 0.5rem var(--secound-color) solid;
+    padding: 0.5rem;
   }
   .shipping_price {
     text-align: right;

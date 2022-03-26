@@ -1,4 +1,5 @@
 import{menu as menu} from "./menu.js";
+import {cartItems as cartItems} from "./cartNumber.js";
 
 const select = document.querySelector("select");
 const shippingPrice = document.querySelector(".s_cost");
@@ -38,4 +39,4 @@ select.addEventListener("change", shippingOption);
 placeOrder.addEventListener("click", ()=>window.sessionStorage.clear());
 
 menu();
-
+cartItems();

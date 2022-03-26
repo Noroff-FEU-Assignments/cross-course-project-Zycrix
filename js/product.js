@@ -1,5 +1,6 @@
 import {jackets as jackets} from "./data.js";
 import {menu as menu} from "./menu.js";
+import {cartItems as cartItems} from "./cartNumber.js";
 
 //Target HTML elements
 const cta = document.querySelector(".cta");
@@ -33,20 +34,16 @@ function addToCart(){
 
   if(!existing){
     window.sessionStorage.setItem(key, value);
-  }
-  else{
-    console.log(typeof window.sessionStorage.getItem(key));
-    let num = Number(existing);
-    console.log(typeof num);
   };
   cta.classList.add("success");
   button.style.marginBottom = "1rem";
-}
+  cartItems();
+};
 
-console.log(jackets[productId]);
 createHtml(product);
 
 button.onclick = addToCart;
 
 menu();
 
+cartItems();

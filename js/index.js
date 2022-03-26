@@ -1,5 +1,6 @@
 import {jackets as jackets} from "./data.js";
 import{menu as menu} from "./menu.js";
+import {cartItems as cartItems} from "./cartNumber.js";
 
 const product = document.querySelectorAll(".product");
 const tbd = 6;    //To be displayed
@@ -24,3 +25,4 @@ let newJackets = jackets.filter(function (jackets){
 
 bestSellers(newJackets);
 menu();
+cartItems();

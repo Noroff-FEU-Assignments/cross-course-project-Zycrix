@@ -1,5 +1,6 @@
 import {jackets as jackets} from "./data.js";
 import {menu as menu} from "./menu.js";
+import {cartItems as cartItems} from "./cartNumber.js";
 
 const container = document.querySelector(".product-container");
 
@@ -93,6 +94,7 @@ function removeItem(){
 };
 
 menu();
+cartItems();
 
 
 

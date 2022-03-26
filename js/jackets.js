@@ -1,5 +1,6 @@
 import { jackets as jackets } from "./data.js";
 import{menu as menu} from "./menu.js";
+import {cartItems as cartItems} from "./cartNumber.js";
 
 //Target HTML elements
 
@@ -39,12 +40,18 @@ function genderFilter() {
 
   container.innerHTML = "";
   let gender;
+  console.log(event);
+  console.log(event.srcElement.className);
 
-  if (event.path[0].className === "men") {
-    gender = displayMale;
-  }
-  else {
+  if(event.srcElement.className.includes("women")){
     gender = displayFemale;
+    women.classList.add("selected");
+    men.classList.remove("selected");
+  }
+  else if (event.srcElement.className.includes("men")) {
+    gender = displayMale;
+    men.classList.add("selected");
+    women.classList.remove("selected");
   };
 
   createHtml(gender);
@@ -54,9 +61,15 @@ function genderFilter() {
 //Call the function
 
 men.addEventListener("click", genderFilter);
+men.addEventListener("mouseenter", ()=>men.classList.add("hover"));
+men.addEventListener("mouseleave", ()=>men.classList.remove("hover"));
 
 women.addEventListener("click", genderFilter);
+women.addEventListener("mouseenter", ()=>women.classList.add("hover"));
+women.addEventListener("mouseleave", ()=>women.classList.remove("hover"));
 
 createHtml(mainDisplay);
 
 menu();
+
+cartItems();
