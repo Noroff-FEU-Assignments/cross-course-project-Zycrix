@@ -50,12 +50,12 @@ button.onclick = addToCart;
 
 menu();
 
-cartItems();
-
 toCart.addEventListener("click", ()=>window.location.href = window.location.origin + "/cart.html");
 
 browse.addEventListener("click", ()=>{
   window.location.href = window.location.origin + "/jackets.html";
   window.sessionStorage.setItem("origin", "cartBack");
 });
+
+cartItems();
 
