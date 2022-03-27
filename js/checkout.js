@@ -24,8 +24,6 @@ function shippingOption(){
   }
 
   totalPrice.innerText = parseInt(totalItems) + parseInt(shipping) + ".00$";
-
-  console.log(typeof totalItems);
 }
 
 

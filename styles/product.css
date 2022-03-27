@@ -190,14 +190,3 @@ input {
     gap: 0;
   }
 }
-/* @media (min-width: 1000px) {
-  .main-container {
-    width: 90%;
-    overflow: hidden;
-  }
-  .product-info {
-    box-sizing: border-box;
-    margin-left: 7.5rem;
-    font-size: 1.5rem;
-  }
-} */

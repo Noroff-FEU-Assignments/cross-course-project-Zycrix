@@ -40,8 +40,6 @@ function genderFilter() {
 
   container.innerHTML = "";
   let gender;
-  console.log(event);
-  console.log(event.srcElement.className);
 
   if(event.srcElement.className.includes("women")){
     gender = displayFemale;

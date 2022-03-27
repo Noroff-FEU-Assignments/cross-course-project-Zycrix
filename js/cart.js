@@ -36,7 +36,7 @@ function getItems(data){
 //Create html with cart array
 function createHtml(data){
   
-  //Cart lsit
+  //Cart list
   for(let i = 0; i < data.length; i++){
 
     container.innerHTML += `      

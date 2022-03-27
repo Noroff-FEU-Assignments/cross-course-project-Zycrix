@@ -73,6 +73,9 @@
   width: 90%;
   margin: 0 auto;
 }
+main {
+  min-height: calc(100vh - 238px);
+}
 @media (min-width: 700px) {
   main p {
     font-size: 1.6rem;
@@ -110,6 +113,7 @@
   }
   main {
     margin-bottom: 4rem;
+    min-height: calc(100vh - 340px);
   }
   .button:hover {
     border: 0.5rem var(--secound-color) solid;

@@ -1,9 +1,6 @@
 li {
   font-family: nimbus-sans;
 }
-.gender-menu {
-  /* display: none; */
-}
 .header-img {
   background-image: url(../images/Jackets-header-img.jpg);
   background-repeat: no-repeat;
@@ -77,7 +74,6 @@ label {
   right: 0px;
   top: 8px;
 }
-
 #sort {
   display: none;
 }
@@ -101,25 +97,6 @@ label {
 .product h3 {
   text-transform: capitalize;
 }
-/* svg {
-  max-width: 100px;
-  margin: 0 auto;
-  display: block;
-  animation: spin 2.5s;
-  animation-iteration-count: infinite;
-  z-index: 1;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
 .gender-menu {
   display: flex;
   justify-content: space-evenly;
@@ -170,13 +147,6 @@ label {
     text-align: center;
     width: 20%;
   }
-  /*   .gender-menu h2:hover {
-    background-color: var(--main-color);
-    border-radius: 30px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3),
-      10px 10px 10px 0 rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-  } */
   .hover {
     background-color: var(--main-color) !important;
     border-radius: 30px;
