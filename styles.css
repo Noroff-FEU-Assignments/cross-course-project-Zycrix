@@ -308,7 +308,7 @@ nav {
 /*footer */
 
 .footer-section-one {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   margin: 2rem;
   background-color: #0a3641;
@@ -358,7 +358,7 @@ nav {
   margin: auto 0;
 }
 .footer-section-two {
-  background-color: rgba(35, 119, 140, 61%);
+  background-color: var(--secound-color);
   padding: 2rem 0;
 }
 .footer-section-two ul {
