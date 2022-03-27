@@ -43,7 +43,6 @@
 .product_size {
   flex-grow: 1;
   text-align: left;
-  text-transform: uppercase;
 }
 .product_price {
   flex-grow: 1;
@@ -91,7 +90,7 @@
     text-align: right;
   }
   .product_size {
-    text-align: right;
+    text-align: center;
   }
   .total {
     border-left: 1px black solid;

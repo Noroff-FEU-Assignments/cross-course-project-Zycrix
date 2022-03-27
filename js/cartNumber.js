@@ -18,7 +18,12 @@ export function cartItems(){
     cart.innerHTML += `<em class = "counter">${numberOfItems}</em>`;
   }
   else{
-    const counter = document.querySelector(".counter");
-    counter.classList.remove("counter");
+    try{
+      const counter = document.querySelector(".counter");
+      counter.classList.remove("counter");
+    }
+    catch(e){
+      //Just adding this try/catch statement because i got an error when trying to remove the counter class while the counter was not active.
+    };
   };
 };

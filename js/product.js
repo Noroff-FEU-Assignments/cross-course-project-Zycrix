@@ -3,14 +3,14 @@ import {menu as menu} from "./menu.js";
 import {cartItems as cartItems} from "./cartNumber.js";
 
 //Target HTML elements
-const cta = document.querySelector(".cta");
 const img = document.querySelector(".p-img");
 const info = document.querySelector(".product-info");
 const desc = document.querySelector(".desc");
 const button = document.querySelector(".add-cart");
 const browse = document.querySelector(".browse");
 const toCart = document.querySelector(".to-cart");
-const main = document.querySelector("main");
+const sizeSelect = document.querySelector(".size-select");
+
 
 //Retrieve the querystring parameter
 const queryString = document.location.search;
@@ -30,13 +30,17 @@ function createHtml (data){
 
 
 function addToCart(){
-  let key = jackets[productId].name;
-  let value = jackets[productId].id;
+  const key = jackets[productId].name;
+  const value = jackets[productId].id;
+  
+  const sizeKey = jackets[productId].name + " Size"
+  const size = sizeSelect.value;
 
   let existing = window.sessionStorage.getItem(key);
 
   if(!existing){
     window.sessionStorage.setItem(key, value);
+    window.sessionStorage.setItem(sizeKey, size)
   };
   browse.classList.add("added");
   toCart.classList.add("added");

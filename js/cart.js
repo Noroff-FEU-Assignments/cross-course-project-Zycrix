@@ -8,20 +8,26 @@ const container = document.querySelector(".product-container");
 function getItems(data){
 
   let productArray = [];
-  
+  let sizeIndex = 0;  //Using a separate index to the for loop to only increment when a product is added to the new array
+
   for(let i = 0; i < data.length; i++){
     
     let item;
+    let itemSize;
 
     try{
-      item = window.sessionStorage.getItem(data[i].name)
+      item = window.sessionStorage.getItem(data[i].name);
+      itemSize = window.sessionStorage.getItem(data[i].name + " Size");
       
+
       if(item){
         productArray.push(data[Number(item) - 1]);
+        productArray[sizeIndex].size = itemSize;
+        sizeIndex++;
       };
     }
-    catch{
-      continue;
+    catch(e){
+      console.log(e);
     };
   };
   return productArray;
@@ -37,7 +43,7 @@ function createHtml(data){
     <div class="cart_container">
     <a href="product.html?id=${data[i].id}"><img src=${data[i].img} class="product_img" alt=${data[i].desc}></a>
     <p class=cart_product>${data[i].name}</p>
-    <p class="product_size">xs</p>
+    <p class="product_size">${data[i].size}</p>
     <p class="product_price">${data[i].price}</p>
     <p class ="remove" data-id = ${data[i].id}>X</p>
   </div>`
