@@ -1,6 +1,7 @@
 import {jackets as jackets} from "./data.js";
 import{menu as menu} from "./menu.js";
 import {cartItems as cartItems} from "./cartNumber.js";
+import {apiCall as apiCall} from "./apiCall.js";
 
 const product = document.querySelectorAll(".product");
 const tbd = 6;    //To be displayed
@@ -23,6 +24,9 @@ let newJackets = jackets.filter(function (jackets){
   return jackets.highlight === true;
 })
 
+
+
 bestSellers(newJackets);
 menu();
 cartItems();
+apiCall();
