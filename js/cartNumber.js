@@ -1,5 +1,8 @@
-import {jackets as jackets} from "./data.js";
+import {apiCall as apiCall} from "./apiCall.js";
+const jackets = await apiCall();
+
 export function cartItems(){
+
   const itemsStored = Object.keys(sessionStorage);
   const cart = document.querySelector(".cart");
 

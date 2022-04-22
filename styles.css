@@ -595,7 +595,7 @@ nav {
   .button:hover {
     background-color: white;
     border: 0.5rem #ab533f solid;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     color: black;
   }
   .about-button:hover {
