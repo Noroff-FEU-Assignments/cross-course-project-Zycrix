@@ -21,7 +21,7 @@ const productId = productIndex;
 //Final product variable for html creation
 const jackets = await apiCall();
 
-const product = jackets.filter((jackets)=> jackets.sku == productId.toString()); //Another way i could've done this would be to fetch the product specific api endpoint using the id from the querystring but i chose to do it this way to reduce the number of api calls since my api call function stores the result in session storage this way seems to result in way better performance, even with a great internet connection retrieving the item from session storage is noticeably faster 
+const product = jackets.filter((jackets)=> jackets.sku === productId.toString()); //Another way i could've done this would be to fetch the product specific api endpoint using the id from the querystring but i chose to do it this way to reduce the number of api calls since my api call function stores the result in session storage this way seems to result in way better performance, even with a great internet connection retrieving the item from session storage is noticeably faster 
 
 //Make some html
 function createHtml (data){
@@ -41,14 +41,14 @@ function addToCart(){
   const key = product[0].name;
   const value = product[0].sku;
 
-  const sizeKey = product[0].name + " Size"
+  const sizeKey = product[0].name + " Size";
   const size = sizeSelect.value;
 
   let existing = window.sessionStorage.getItem(key);
 
   if(!existing){
     window.sessionStorage.setItem(key, value);
-    window.sessionStorage.setItem(sizeKey, size)
+    window.sessionStorage.setItem(sizeKey, size);
   };
   browse.classList.add("added");
   toCart.classList.add("added");
