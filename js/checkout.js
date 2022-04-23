@@ -9,7 +9,6 @@ const placeOrder = document.querySelector(".main-cta");
 
 let shipping = "";
 
-
 function shippingOption(){
 
   let value = select.value;
@@ -21,16 +20,12 @@ function shippingOption(){
   else{
     shipping = "10.00$";
     shippingPrice.innerText = shipping;
-  }
+  };
 
   totalPrice.innerText = parseInt(totalItems) + parseInt(shipping) + ".00$";
-}
-
-
+};
 
 shippingOption();
-
-
 
 document.onload = shippingOption;
 select.addEventListener("change", shippingOption);
