@@ -4,7 +4,7 @@ import{bestSellers as bestSellers} from "./highlight.js";
 import{apiCall as apiCall} from "./apiCall.js";
 const jackets = await apiCall();
 
-if(window.location.href === window.location.origin + "/success.html"){
+if(window.location.href === window.location.origin + "/succes.html"){
   try{
     
     //Filter the jackets array and store all jackets with an attribute of "highlight" set to "true"
