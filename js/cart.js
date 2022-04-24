@@ -49,7 +49,7 @@ function createHtml(data){
 
     container.innerHTML += `      
     <div class="cart_container tst">
-      <a href="product.html?id=${data[i].sku}"><img src=${data[i].attributes[2].options[0]} class="product_img" alt=${desc}></a>
+      <a href="product.html?id=${data[i].sku}"><img src=${data[i].images[0].src} class="product_img" alt=${desc}></a>
       <p class=cart_product>${data[i].name}</p>
       <p class="product_size">${data[i].size}</p>
       <p class="product_price">${data[i].price}.00$</p>

@@ -30,7 +30,7 @@ function createHtml (data){
 
   let description = data[0].description.replace(regEx, "");
 
-  img.innerHTML = `<img src = "${data[0].attributes[2].options[0]}" class = "product-image" alt = ${description}>`;
+  img.innerHTML = `<img src = "${data[0].images[0].src}" class = "product-image" alt = ${description}>`;
   info.innerHTML = `<h1>${data[0].name}</h1>
                     <h2>${data[0].price}.00$</h2>`;
   desc.innerHTML = `<p class = "product-description">${description}</p>`;

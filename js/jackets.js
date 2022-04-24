@@ -31,7 +31,7 @@ function createHtml(data) {
     container.innerHTML += `
       <div class="product">
 	      <div class="overlay-container">  
-		      <a href="product.html?id=${data[i].sku}" class = "product-link"><img src=${data[i].attributes[2].options[0]} alt="${desc}" class="product-img"></a>
+		      <a href="product.html?id=${data[i].sku}" class = "product-link"><img src=${data[i].images[0].src} alt="${desc}" class="product-img"></a>
           <span class="material-icons icon">favorite</span>
         </div>
         <h3>${data[i].name}</h3>
