@@ -22,3 +22,12 @@ a:hover {
   color: black;
   background-color: white;
 }
+header{
+  display:none;
+}
+@media(min-width:700px){
+  .container{
+    width:40%;
+    margin:10rem auto;
+  }
+}

@@ -1,0 +1,47 @@
+.header-img{
+    background-image:url(../images/our-story.jpg);
+    background-size: cover;
+    min-height:22vh;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.main-header{
+    text-transform: capitalize;
+    text-align: center;
+}
+.main-content{
+    max-width:75%;
+    margin:0 auto 10rem;
+}
+.story{
+    padding:40px;
+    margin:0;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+@media (min-width:700px){
+    .header-img{
+        min-height:85vh;
+        position:relative;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+
+    }
+    .story{
+        padding:100px;
+        font-size: 3rem;
+    }
+    .main-header{
+        margin:10rem auto 5rem;
+        font-size: 2.5rem;
+    }
+    .main-content{
+        max-width:50%;
+        margin-bottom:20rem;
+    }
+    .main-content p{
+        font-size:1.5rem;
+    }
+}

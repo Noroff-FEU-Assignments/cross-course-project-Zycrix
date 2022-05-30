@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
     <head>
-        <title>Rainyday | Contact</title>
-        <meta name="Description" content="Contact us!">
+        <title>Rainyday | Home</title>
+        <meta name="Description" content="Great jackets for every rainy occation">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <meta charset="utf-8" dir="ltr">
         <meta name="author" content="Kristoffer Mikkelsen">
         <link rel="stylesheet" href="https://use.typekit.net/fsb6ams.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="styles/contact.css">
-        <!-- Hotjar Tracking Code for https://heuristic-raman-3c0011.netlify.app/index.html -->
-        <script>
-          (function(h,o,t,j,a,r){
-              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-              h._hjSettings={hjid:2873423,hjsv:6};
-              a=o.getElementsByTagName('head')[0];
-              r=o.createElement('script');r.async=1;
-              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-              a.appendChild(r);
-          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../styles/contact.css">
     </head>
     <body>
       <header class="nav-bar">
@@ -28,48 +17,45 @@
         <nav>  
           <h6 class="accesibility">Navigation Bar</h6>
           <div class="logo-div"> 
-            <a href="index.html" class="logo"><img src="images/RainyDays_Logo.svg" alt="rainydays logo"></a>
+            <a href="../index.html" class="logo"><img src="../images/RainyDays_Logo.svg" alt="rainydays logo"></a>
           </div> 
           <div class="menu">
             <label for="burger-menu"><span class="material-icons burger-menu">menu</span></label>
             <input type="checkbox" id="burger-menu">
-          </div>
-          <div class="list-container">
             <ul class="nav-list">
-              <li class="nav-pages" id="cart"><a href="cart.html">cart</a></li>
-              <li class="nav-pages"><a href="index.html">home</a></li>
-              <li class="nav-pages"><a href="jackets.html">jackets</a></li>
-              <li class="nav-pages"><a href="about.html">about</a></li>
-              <li class="nav-pages active"><a href="contact.html">contact</a></li>
+              <li class="nav-pages" id="cart"><a href="../cart.html">cart</a></li>
+              <li class="nav-pages"><a href="../index.html">home</a></li>
+              <li class="nav-pages"><a href="../jackets.html">jackets</a></li>
+              <li class="nav-pages"><a href="../about.html">about</a></li>
+              <li class="nav-pages active"><a href="../contact.html">contact</a></li>
             </ul>
           </div>
           <div class="nav-icons">
-            <ul class="icon-list">
-              <li><a href="wishlist.html"><span class="material-icons nav-icon fav">favorite</span></a></li>
-              <li><a href="cart.html" class = "cart"><span class="material-icons nav-icon">shopping_cart</span> </a></li>
-              <li><a href="profile.html"><span class="material-icons nav-icon">account_circle</span></a></li>
-            </ul>
+            <ul>
+              <li><a href="../wishlist.html"><span class="material-icons nav-icon fav">favorite</span></a></li>
+              <li><a href="../cart.html"><span class="material-icons nav-icon">shopping_cart</span></a></li>
+              <li><a href="../profile.html"><span class="material-icons nav-icon">account_circle</span></a></li>
+          </ul>
           </div>
         </nav>
       </header>
         <main>
-          <div class="header-img">
-          </div>
+          <div class="header-img"></div>
           <h1 class="main-header">contact us</h1>
           <section class="form">
             <h6 class="accesibility">Contact form</h6>
-            <form method="get">
-              <label for="fullname" class = "name">full name</label>
+            <form action="temp/contact_temp.html" method="get">
+              <label for="fullname">full name</label>
               <input type="text" name="fullname" id="fullname">
-              <label for="email" class = "email">email adress</label>
+              <label for="email">email adress</label>
               <input type="email" name="email" id="email">
-              <label for="message" class = "message">message</label>
+              <label for="message">message</label>
               <textarea id="message" name="message" rows="5" cols="60"></textarea>
            </form>
-           <button class = "main-cta">SUBMIT</button>
           </section>
+          <p class="thanks">Thank you for contacting us, we will get back to you as soon as possible</p>
           <section class="contact-info">
-            <h2>Want to get in touch directly?</h2>
+            <h2>want to get in touch directly?</h2>
             <div class="phone">
               <p>phone number</p>
               <p>+47 124 90 123</p>
@@ -82,6 +68,23 @@
           </section>
         </main>
         <footer>
+          <section class="footer-section-one">
+            <h6 class="accesibility">Footer links and adress information</h6>
+            <div>
+              <ul class="footer-list">
+                <li><a href="../contact.html">faq</a></li>
+                <li><a href="../about.html">about</a></li>
+                <li><a href="../contact.html">support</a></li>
+                <li><a href="../contact.html">contact</a></li>
+              </ul>
+            </div>
+            <div class="line-div"></div>
+            <div class="container-adress">
+              <p>Norgeveien 6</p>
+              <p>1234, Norgestad</p>
+              <p>Norge</p>
+            </div>
+          </section>
           <section class="footer-section-two">
             <h6 class="accesibility">Social links</h6>
             <ul>
@@ -93,5 +96,4 @@
             </ul>
           </section>
         </footer>
-        <script src = "js/contact.js" type = "module"></script>
     </body>

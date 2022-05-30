@@ -1,0 +1,45 @@
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+h2 {
+  margin: 3rem;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-container {
+  margin: 0 auto 3rem;
+}
+.product h3 {
+  text-align: left;
+}
+.p5 {
+  display: none;
+}
+.p6 {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  .p5 {
+    display: block;
+  }
+  .p6 {
+    display: block;
+  }
+  .product p {
+    text-align: left;
+  }
+  .grid-container {
+    width: 60%;
+  }
+}
